@@ -1,0 +1,21 @@
+{
+    "name": "zabachok/yii2-file-log-reader",
+    "description": "A module for reading the log files",
+    "type": "yii2-extension",
+    "keywords": ["yii2","log","read","file"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniil Romanov",
+            "email": "zabachok@zabachok.net"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "zabachok\\logreader\\": ""
+        }
+    }
+}
