@@ -22,6 +22,7 @@ class Reader
     protected $seek = 0;
     protected $length = -10;
     protected $opened = false;
+    public $mtime;
     private $body = '';
     private $index = 0;
     public $ignore = [
@@ -32,6 +33,7 @@ class Reader
     {
         $this->path = $path;
         $this->filename = $filename;
+        $this->mtime = filemtime($this->path . '/' . $this->filename);
     }
 
     public function open()
