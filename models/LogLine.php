@@ -34,10 +34,9 @@ class LogLine extends Model
     public function rules()
     {
         return [
-            ['ip', 'ip'],
             ['date', 'date'],
             [['index', 'user_id'], 'integer'],
-            [['session_id', 'level', 'category', 'text', 'firstLine'], 'string'],
+            [['ip', 'session_id', 'level', 'category', 'text', 'firstLine'], 'string'],
         ];
     }
 
