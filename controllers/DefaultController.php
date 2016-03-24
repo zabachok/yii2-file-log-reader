@@ -16,7 +16,7 @@ class DefaultController extends Controller
 //        print_r($reader->getRow()->attributes);
 //        return 3;
         $files = [];
-        foreach ($this->module->dirs as $dir)
+        foreach ($this->module->sources as $dir)
         {
 
             $path = Yii::getAlias($dir);
@@ -41,5 +41,13 @@ class DefaultController extends Controller
         ]);
     }
 
+    public function actionView($file)
+    {
+        $file = pathinfo($file);
+        $model = new Reader($file['dirname'], $file['basename']);
+        return $this->render('view', [
+            'model'=>$model,
+        ]);
+    }
 
 }

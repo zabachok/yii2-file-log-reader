@@ -32,8 +32,8 @@ class LogFile extends Object
      */
     public static function sort($one, $two)
     {
-        if($one->mtime < $two->mtime) return -1;
-        elseif($one->mtime > $two->mtime) return 1;
+        if($one->mtime < $two->mtime) return 1;
+        elseif($one->mtime > $two->mtime) return -1;
         else return 0;
     }
 

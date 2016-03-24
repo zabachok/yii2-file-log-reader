@@ -13,6 +13,9 @@ Modal::begin([
     'header' => '<h2>Запись в логе</h2>',
     'id'=>'modal',
     'size'=>Modal::SIZE_LARGE,
+    'options'=>[
+        'style'=>'word-break:break-word;',
+    ],
 ]);
 
 Modal::end();

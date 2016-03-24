@@ -94,7 +94,7 @@ class Reader
     {
         foreach($this->ignore as $item)
         {
-            if($item['level'] == $data['level'] && $item['category'] = $data['category']) return true;
+            if($item['level'] == $data['level'] && $item['category'] == $data['category']) return true;
         }
         return false;
     }

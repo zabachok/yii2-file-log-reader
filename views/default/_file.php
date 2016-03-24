@@ -1,5 +1,9 @@
 <div class="">
-    <h4><span class="text-muted"><?=$model->path?>/</span><?=$model->filename?></h4>
+    <h4>
+        <a href="/logreader/default/view?file=<?=$model->path.'/'.$model->filename?>">
+        <span class="text-muted"><?=$model->path?>/</span><?=$model->filename?>
+        </a>
+    </h4>
     <?php
 
     $iterator = 0;
